@@ -38,11 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "build": {
-    "base": "weather-react",
-    "command": "npm run build",
-    "publish": "client/build"
   }
   
  
