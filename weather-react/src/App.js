@@ -1,14 +1,20 @@
-import './App.css';
+import { useState } from "react";
+import Weather from "./Weather";
+import SearchBar from "./SearchBar";
+import CityLinks from "./CityLinks";
+import "./App.css";
 
-function App() {
+export default function App() {
+  const [city, setCity] = useState("Lisbon");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Weather App </h1>
-        
-      </header>
+    <div className="container">
+      <CityLinks onSelect={setCity} />
+      <SearchBar onSearch={setCity} />
+      <Weather city={city} />
+      <footer className="credit">
+        Open‑source code, by Matt Delac from She Codes
+      </footer>
     </div>
   );
 }
-
-export default App;
