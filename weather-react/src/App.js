@@ -12,9 +12,20 @@ export default function App() {
       <CityLinks onSelect={setCity} />
       <SearchBar onSearch={setCity} />
       <Weather city={city} />
-      <footer className="credit">
-        Open‑source code, by Matt Delac from She Codes
-      </footer>
+    <footer className="credit">
+  Open‑source code by Francesca Valentini,{" "}
+  <a
+    href="https://github.com/novaesc"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    see the code on GitHub
+  </a>
+  <span> · built with React · </span>
+</footer>
     </div>
   );
 }
+
+
+
