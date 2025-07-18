@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Weather from "../Weather";
-import SearchBar from "../SearchBar";
-import CityLinks from "../CityLinks";
+import Weather from "./Weather";
+import SearchBar from "./SearchBar";
+import CityLinks from "./CityLinks";
 import "./App.css";
 
 export default function App() {
